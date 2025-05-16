@@ -1,0 +1,39 @@
+/* Cards do carrossel*/
+.card{
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-body{
+    align-items: center;
+    justify-content: center;
+    margin: 10px 10px 10px 10px;
+    display: flex;
+
+    max-width: 1500px;  /* Largura máxima */
+    height: 390px;  /* Altura fixa */
+}
+/* Módulo do carrosel*/
+
+ 
+.carousel-inner .carousel-item{
+    text-align: center;
+    background-color: #202020;
+    max-width: 10px;  /* Largura máxima */
+    height:  400px; /
+
+}
+.carousel-control-prev, .carousel-control-text{
+    color: #cf0d0d;
+}
+
+
+.carousel-control-prev-icon, .carousel-control-next-icon{
+    background-color: #cf0d0d;
+}
+
+.carousel-image {
+  width: 50%; /* Ou outro valor de largura que desejar */
+  height: auto; /* Mantém a proporção da imagem */
+  object-fit: cover; /* Ou outro valor de object-fit para ajuste */
+}

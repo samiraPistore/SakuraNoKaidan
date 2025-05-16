@@ -1,0 +1,67 @@
+* {
+    margin: 10;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+body {
+    font-family: 'Merriweather', serif;
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+h2, label, p {
+    color: black;
+}
+p{
+    font-size: 20px;
+}
+section {
+    gap: 10px;
+    height: 100vh;
+    display: flex; /* Flexbox para posicionar lado a lado */
+    justify-content: flex-start; /* Alinha à esquerda */
+    align-items: flex-start; /* Alinha ao topo */
+    gap:10px;
+
+}
+
+#botao {
+    background-color: rgb(126, 21, 94);
+    border-color: rgb(29, 1, 27);
+    width: 200px;
+    height: 30px;
+    color: aliceblue;
+    border-radius: 10px;
+}
+
+.container {
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+    width: 30%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Se quiser centralizar verticalmente também */
+    margin-left: 400px;
+    margin-top: 150px;
+}
+
+
+textarea, input {
+    width: 500px;
+    max-width: 500px;
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 10px;
+}
+img{
+    height: 700px;
+    width: auto;
+    margin-top: 150px; /* Ajuste conforme necessário */
+}
+

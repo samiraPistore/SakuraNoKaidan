@@ -1,0 +1,93 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* Fonte do Google */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+
+
+/* Corpo da página */
+body {
+  font-family: 'Merriweather', serif;
+  background-image: url('../img/bg_sakura.jpg'); /* ajuste o caminho conforme seu projeto */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  color: #333;
+  line-height: 1.6;
+}
+
+
+/* Cabeçalho */
+header {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+
+/* Container do cabeçalho */
+.menu-principal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
+/* Logo */
+.logo h1 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #1e1e1e;
+  white-space: nowrap;
+}
+
+
+/* Navegação */
+nav {
+  display: flex;
+}
+
+
+nav a {
+  text-decoration: none;
+  color: #000;
+  position: relative;
+  padding: 0 10px;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+
+nav a:hover {
+  color: #c50451;
+}
+
+
+nav a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #a70042;
+  transition: width 0.3s ease;
+}
+
+
+nav a:hover::after {
+  width: 100%;
+}
